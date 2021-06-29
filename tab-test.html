@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+<title>Tab Testing</title>
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script>
+   $(document).ready(function() {
+     $(".hidediv").click(function () {
+     $(".divdemo").hide("slow");
+    });
+
+     $(".showdiv").click(function () {
+     $(".divdemo").show(2000);
+    });
+
+   });
+
+</script>
+<style>
+.divdemo{
+width:300px;
+height: 200px;
+background-color:#0780BA;
+color:#fff;
+padding:100px;
+font-size:25px;
+}
+</style>
+</head>
+
+<body>
+<!--p><button class="hidediv">Hide div</button>
+<button class="showdiv">Show div</button>
+</p-->  
+<ul>
+<li class="hidediv">Hide div</li>
+<li class="showdiv">Show div</li>
+</ul>
+   <div class="divdemo">
+     Show / Hide demo
+   </div>
+</body>
+</html>
+
