@@ -1,20 +1,20 @@
 <?php
-$array = []; // the array to iterate over
+$subcounty_list = []; // the array to iterate over
 //declare the variables
-$languages = '';
-$tools = ''
-foreach ($array as $item) {
+$subcounties = '';
+$paybills = ''
+foreach ($subcounties as $item) {
     //store the data
-    $language = $item['language'];
-    $tool = $item['tool'];
+    $subcounty = $item['subcounty_name'];
+    $paybill = $item['business_shortcode'];
 
     //format the data
-    $formatted_language .= "<div class="language">{$language}</div>";
-    $formatted_content =  "<div class="item">{$tool}</div>";
+    $subcounty_selected .= "<div class="subcounty">{$subcounty}</div>";
+    $tab_content =  "<div class="item">{$paybill}</div>";
 
-    $languages .= $formatted_language;
-    $tools .= $formatted_tools;
+    $subcounties .= $subcounty_selected;
+    $paybills .= $tab_content;
 }
 // display the collated data
-echo '<section id="languages">' . $languages . '</section>';
-echo '<section id="tools">' . $tools . '</section>';
+echo '<section id="subcounties">' . $subcounties . '</section>';
+echo '<section id="paybills">' . $paybills . '</section>';
