@@ -87,7 +87,7 @@
             let $target = $("#div" + $(this).attr("target")).show(2000);
             $(".targetDiv").not($target).hide("slow");
 
-            let selected = $("li.active");
+            let selected = $(this).text();
             alert("You have selected " + selected);
         });
     });
